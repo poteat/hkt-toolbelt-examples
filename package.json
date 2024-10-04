@@ -1,0 +1,37 @@
+{
+  "name": "hkt-toolbelt-examples",
+  "version": "0.0.0",
+  "description": "A collection of example usage of hkt-toolbelt",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/poteat/hkt-toolbelt-exercises.git"
+  },
+  "keywords": [
+    "hkt",
+    "types",
+    "higher",
+    "kinded",
+    "examples",
+    "kinds",
+    "functional"
+  ],
+  "author": "Alice Poteat <alice@code.lol>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poteat/hkt-toolbelt-exercises/issues"
+  },
+  "homepage": "https://github.com/poteat/hkt-toolbelt-exercises#readme",
+  "dependencies": {
+    "hkt-toolbelt": "^0.24.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5"
+  }
+}
