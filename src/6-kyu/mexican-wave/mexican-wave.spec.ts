@@ -6,7 +6,7 @@ describe("mexicanWave", () => {
       "Hello",
       "hEllo",
       "heLlo",
-      "HelLo",
+      "helLo",
       "hellO",
     ]);
   });
