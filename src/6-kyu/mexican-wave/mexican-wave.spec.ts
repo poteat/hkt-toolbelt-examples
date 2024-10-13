@@ -1,8 +1,9 @@
+import { expectType } from "../../_internal/expectType";
 import { mexicanWave } from "./mexican-wave";
 
 describe("mexicanWave", () => {
   it("should capitalize the letter at the index", () => {
-    expect(mexicanWave("hello")).toEqual([
+    expectType(mexicanWave("hello")).toBe([
       "Hello",
       "hEllo",
       "heLlo",
@@ -12,18 +13,18 @@ describe("mexicanWave", () => {
   });
 
   it("should capitalize the letter at the index, skipping spaces", () => {
-    expect(mexicanWave("a b c")).toEqual(["A b c", "a B c", "a b C"]);
+    expectType(mexicanWave("a b c")).toBe(["A b c", "a B c", "a b C"]);
   });
 
   it("can handle multiple spaces", () => {
-    expect(mexicanWave("a  b c")).toEqual(["A  b c", "a  B c", "a  b C"]);
+    expectType(mexicanWave("a  b c")).toBe(["A  b c", "a  B c", "a  b C"]);
   });
 
   it("can handle only one letter", () => {
-    expect(mexicanWave("a")).toEqual(["A"]);
+    expectType(mexicanWave("a")).toBe(["A"]);
   });
 
   it("can handle empty string", () => {
-    expect(mexicanWave("")).toEqual([]);
+    expectType(mexicanWave("")).toBe([]);
   });
 });
