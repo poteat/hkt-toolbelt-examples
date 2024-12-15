@@ -27,11 +27,12 @@
   },
   "homepage": "https://github.com/poteat/hkt-toolbelt-exercises#readme",
   "dependencies": {
-    "hkt-toolbelt": "^0.24.11"
+    "hkt-toolbelt": "^0.25.2"
   },
   "devDependencies": {
     "@types/jest": "^29.5.13",
     "jest": "^29.7.0",
-    "ts-jest": "^29.2.5"
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.2"
   }
 }
