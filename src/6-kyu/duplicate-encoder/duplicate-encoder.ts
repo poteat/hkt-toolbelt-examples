@@ -50,5 +50,3 @@ export const duplicateEncoder = Kind.pipe([
   ),
   String.fromList,
 ]);
-
-const result = duplicateEncoder("recede");
