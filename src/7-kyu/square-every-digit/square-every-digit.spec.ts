@@ -3,6 +3,7 @@ import { squareEveryDigit } from "./square-every-digit";
 
 describe("squareEveryDigit", () => {
   it("should square every digit of a number and concatenate each", () => {
-    expectType(squareEveryDigit(998)).toBe("818164");
+    const result = squareEveryDigit(998);
+    expectType(result).toBe(818164);
   });
 });

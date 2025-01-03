@@ -1,4 +1,4 @@
-import { Kind, String, List } from "hkt-toolbelt";
+import { String, List, Iso } from "hkt-toolbelt";
 
 /**
  * Given a string, return the string with each word reversed.
@@ -13,8 +13,4 @@ import { Kind, String, List } from "hkt-toolbelt";
  *
  * https://www.codewars.com/kata/55a1c0d8d0f8b1a8e80001f9/typescript
  */
-export const reverseWords = Kind.pipe([
-  String.split(" "),
-  List.map(String.reverse),
-  String.join(" "),
-]);
+export const reverseWords = Iso.String.words(List.map(String.reverse));

@@ -1,4 +1,4 @@
-import { Kind, NaturalNumber } from "hkt-toolbelt";
+import { Iso, NaturalNumber } from "hkt-toolbelt";
 
 /**
  * Given a number, return the sum of its digits recursively until it reaches a
@@ -14,8 +14,6 @@ import { Kind, NaturalNumber } from "hkt-toolbelt";
  *
  * https://www.codewars.com/kata/541c8630095125aba6000c00/typescript
  */
-export const sumOfDigits = Kind.pipe([
-  NaturalNumber.decrement,
-  NaturalNumber.moduloBy(9),
-  NaturalNumber.increment,
-]);
+export const sumOfDigits = Iso.NaturalNumber.decrement(
+  NaturalNumber.moduloBy(9)
+);
